@@ -8,19 +8,19 @@ const PATHS = {
 module.exports = {
 
   entry: {
-    'react-appear-in': PATHS.src + '/index.ts'
+    'react-appear-in': path.join(PATHS.src, 'react-appear-in.tsx'),
   },
   output: {
     path: PATHS.dist,
     filename: '[name].js',
-    library: 'react-appear-in',
+    library: '[name]',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /(\.ts|\.tsx)/,
         loader: 'ts-loader',
         exclude: /node_modules/
       }
@@ -28,5 +28,8 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js']
-  }
+  },
+  externals : {
+    react: 'react'
+  },
 }

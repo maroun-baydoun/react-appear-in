@@ -57,4 +57,4 @@ class AppearIn extends React.Component<AppearInProps, AppearInState> {
   }
 }
 
-export { AppearIn };
+export default AppearIn ;

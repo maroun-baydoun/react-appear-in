@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
 
-import { AppearIn } from './appear-in';
+import AppearIn from './react-appear-in';
 
 describe('<AppearIn/>', () => {
 
