@@ -1,6 +1,6 @@
 import React from 'react';
 
-type AppearInProps = {
+export type AppearInProps = {
   milliseconds?: number,
   seconds?: number,
   minutes?: number,

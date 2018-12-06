@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/react-appear-in.js",
   "scripts": {
+    "lint": "tslint -c tslint.json --force --fix 'src/**/*.tsx'",
     "test": "jest",
     "build": "webpack --mode production"
   },
