@@ -13,11 +13,11 @@
     "url": "http://www.maroun-baydoun.com/"
   },
   "repository": {
-    "type" : "git",
-    "url" : "git@github.com:maroun-baydoun/react-appear-in.git"
+    "type": "git",
+    "url": "git@github.com:maroun-baydoun/react-appear-in.git"
   },
-  "bugs": { 
-    "url" : "https://github.com/maroun-baydoun/react-appear-in/issues"
+  "bugs": {
+    "url": "https://github.com/maroun-baydoun/react-appear-in/issues"
   },
   "homepage": "http://www.maroun-baydoun.com/projects/react-appear-in/",
   "keywords": [
