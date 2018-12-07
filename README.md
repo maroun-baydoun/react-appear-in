@@ -1,6 +1,7 @@
 ## React Appear In
 ##### Make react components appear sometime in the future
 
+[![npm version](https://badge.fury.io/js/react-appear-in.svg)](https://badge.fury.io/js/react-appear-in)
 
 ### Install
 
@@ -23,7 +24,7 @@ const MyAwesomeComponent = () => (
 ### Props
 
 | Name            | Type        | Required    |
-|-----------------|:-----------:|------------:|
+|-----------------|:------------|:------------|
 | `minutes`       | number      | no          |
 | `seconds`       | number      | no          |
 | `milliseconds`  | number      | no          |
