@@ -1,0 +1,53 @@
+{
+  "name": "react-appear-in-demo",
+  "version": "1.0.0",
+  "description": "Demo of the react-appear-in package",
+  "main": "index.js",
+  "dependencies": {
+    "react": "16.6.3",
+    "react-appear-in": "1.0.0",
+    "react-dom": "16.6.3",
+    "styled-components": "4.1.2"
+  },
+  "devDependencies": {
+    "@types/jest": "23.3.10",
+    "@types/node": "10.12.12",
+    "@types/react": "16.7.13",
+    "@types/react-dom": "16.0.11",
+    "@types/react-test-renderer": "16.0.3",
+    "@types/styled-components": "4.1.2",
+    "react-scripts": "2.1.1",
+    "react-test-renderer": "16.6.3",
+    "typescript": "3.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maroun-baydoun/react-appear-in.git"
+  },
+  "keywords": [
+    "react",
+    "typescript"
+  ],
+  "author": {
+    "name": "Maroun Baydoun",
+    "url": "http://www.maroun-baydoun.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maroun-baydoun/react-appear-in/issues"
+  },
+  "homepage": "https://github.com/maroun-baydoun/react-appear-in#readme",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "jest": {}
+}
