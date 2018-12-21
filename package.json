@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "Make react components appear sometime in the future",
   "main": "dist/react-appear-in.js",
+  "types": "types/react-appear-in.d.ts",
   "scripts": {
     "lint": "tslint -c tslint.json --force --fix 'src/**/*.tsx'",
     "test": "jest",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "preversion": "npm test",
+    "version": "npm run build",
+    "postversion": "git push --tags && rm -rf dist && rm -rf types"
   },
   "author": {
     "name": "Maroun Baydoun",
