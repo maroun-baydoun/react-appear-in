@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/> renders component 1`] = `
+<div
+  className="sc-bwzfXH kbjYKv"
+>
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+  <div
+    className="sc-bdVaJa gYeXqn"
+  />
+</div>
+`;

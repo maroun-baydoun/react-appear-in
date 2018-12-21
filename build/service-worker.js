@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/maroun-baydoun/react-appear-in/precache-manifest.c4898dbbc96dab04ed8e4dc6059f6ecb.js"
+  "/maroun-baydoun/react-appear-in/precache-manifest.b5db69284ef0dd8854a1400b76c9c968.js"
 );
 
 workbox.clientsClaim();

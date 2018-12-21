@@ -18,6 +18,9 @@
     "@types/styled-components": "4.1.2",
     "react-scripts": "2.1.1",
     "react-test-renderer": "16.6.3",
+    "tslint": "5.11.0",
+    "tslint-config-airbnb": "5.11.1",
+    "tslint-react": "3.6.0",
     "typescript": "3.2.2"
   },
   "scripts": {
