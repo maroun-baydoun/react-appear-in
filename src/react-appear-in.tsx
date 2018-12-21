@@ -4,6 +4,8 @@ export type AppearInProps = {
   milliseconds?: number,
   seconds?: number,
   minutes?: number,
+
+  onAppear?: (time: number) => void,
 };
 
 type AppearInState = {
@@ -12,28 +14,35 @@ type AppearInState = {
 
 class AppearIn extends React.Component<AppearInProps, AppearInState> {
 
-  constructor(props: AppearInProps) {
-    super(props);
-
-    this.state = {
-      visible: false,
-    };
-  }
+  state = {
+    visible: false,
+  };
 
   componentDidMount() {
     const time = this.calculateTime();
 
+    const onStateUpdated = () => {
+      const { onAppear } = this.props;
+
+      if (onAppear) {
+        onAppear(time);
+      }
+    };
+
+    const updateState = () => {
+      this.setState(
+        {
+          visible: true,
+        },
+        onStateUpdated,
+      );
+    };
+
     if (time === 0) {
-      this.setState({
-        visible: true,
-      });
+      updateState();
     } else {
       setTimeout(
-        () => {
-          this.setState({
-            visible: true,
-          });
-        },
+        updateState,
         time,
       );
     }

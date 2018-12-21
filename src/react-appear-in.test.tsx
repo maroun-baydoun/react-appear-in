@@ -66,4 +66,21 @@ describe('<AppearIn/>', () => {
     expect(rendered.root.children.length).toBe(1);
   });
 
+  it('Calls onAppear prop with time argument when children are rendered', () => {
+    const onAppear  = jest.fn();
+    render({ onAppear, seconds: 25 });
+
+    jest.advanceTimersByTime(25 * 1000);
+
+    expect(onAppear).toHaveBeenCalledTimes(1);
+    expect(onAppear).toHaveBeenCalledWith(25 * 1000);
+  });
+
+  it('Calls onAppear prop with time argument when children are rendered immediately', () => {
+    const onAppear  = jest.fn();
+    render({ onAppear });
+
+    expect(onAppear).toHaveBeenCalledTimes(1);
+    expect(onAppear).toHaveBeenCalledWith(0);
+  });
 });
