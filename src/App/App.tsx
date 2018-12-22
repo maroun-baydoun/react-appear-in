@@ -31,10 +31,10 @@ class App extends Component {
 }
 
 const CellContainer = styled('div')`
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-background-color: grey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: grey;
 `;
 
 export default App;

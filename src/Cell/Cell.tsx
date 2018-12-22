@@ -26,15 +26,15 @@ class Cell extends PureComponent<{}, State> {
 }
 
 const StyledContainer = styled('div')`
-background-color: darkgrey;
-color: #efefef;
-width: 150px;
-height: 100px;
-margin: 5px;
-padding: 5px;
-display: flex;
-flex-direction: column;
-justify-content: center;
+  background-color: darkgrey;
+  color: #efefef;
+  width: 150px;
+  height: 100px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export default Cell;
