@@ -4,6 +4,6 @@ export const generateRandomNumber = (min: number, max: number) =>
 
 export const generateRandomTime = () => ({
   milliseconds: generateRandomNumber(10, 100),
-  minutes: generateRandomNumber(0, 1),
+  minutes: generateRandomNumber(0, 2),
   seconds: generateRandomNumber(5, 30),
 });

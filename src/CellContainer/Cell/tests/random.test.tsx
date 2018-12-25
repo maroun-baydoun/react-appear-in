@@ -27,7 +27,7 @@ describe('random', () => {
 
       expect(mockMath.random).toBeCalledTimes(3);
       expect(milliseconds).toBe(60);
-      expect(minutes).toBe(0);
+      expect(minutes).toBe(1);
       expect(seconds).toBe(20);
     });
   });

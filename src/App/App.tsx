@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
+import React, { Component, Fragment } from 'react';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
-import Cell from '../Cell';
+import CellContainer from '../CellContainer';
 
 const GlobalStyle = createGlobalStyle`
   html, body {
@@ -20,21 +20,14 @@ class App extends Component {
   render() {
     return (
         <ThemeProvider theme={{}}>
-            <CellContainer>
+          <Fragment>
             <GlobalStyle/>
-            {[...Array(100)].map((_, i)  => <Cell key={i}/>)}
-          </CellContainer>
+            <CellContainer/>
+          </Fragment>
         </ThemeProvider>
 
     );
   }
 }
-
-const CellContainer = styled('div')`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: grey;
-`;
 
 export default App;
