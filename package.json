@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Demo of the react-appear-in package",
   "main": "index.js",
+  "homepage": "http://maroun-baydoun.github.io/react-appear-in",
   "dependencies": {
     "react": "16.7.0",
     "react-appear-in": "1.0.1",
@@ -16,6 +17,7 @@
     "@types/react-dom": "16.0.11",
     "@types/react-test-renderer": "16.0.3",
     "@types/styled-components": "4.1.4",
+    "gh-pages": "2.0.1",
     "react-scripts": "2.1.1",
     "react-test-renderer": "16.7.0",
     "tslint": "5.12.0",
@@ -28,7 +30,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "tslint -c tslint.json --force --fix 'src/**/*.tsx'"
+    "lint": "tslint -c tslint.json --force --fix 'src/**/*.tsx'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -46,7 +50,6 @@
   "bugs": {
     "url": "https://github.com/maroun-baydoun/react-appear-in/issues"
   },
-  "homepage": "https://github.com/maroun-baydoun/react-appear-in#readme",
   "browserslist": [
     ">0.2%",
     "not dead",
