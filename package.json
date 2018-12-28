@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Demo of the react-appear-in package",
   "main": "index.js",
-  "homepage": "http://maroun-baydoun.github.io/react-appear-in",
+  "homepage": "http://maroun-baydoun.com/projects/react-appear-in",
   "dependencies": {
     "react": "16.7.0",
     "react-appear-in": "1.0.1",

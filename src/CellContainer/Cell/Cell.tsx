@@ -18,21 +18,19 @@ class Cell extends PureComponent<{}, State> {
     return (
       <StyledContainer>
         <AppearIn minutes={minutes} seconds={seconds} milliseconds={milliseconds}>
-          <div>I appeared after</div>
-          <TimeContainer>{minutes}m. {seconds}s. {milliseconds}ms.</TimeContainer>
+          <StyledCellContent>
+            <div>I appeared after</div>
+            <TimeContainer>{minutes}m. {seconds}s. {milliseconds}ms.</TimeContainer>
+          </StyledCellContent>
         </AppearIn>
       </StyledContainer>
     );
   }
 }
 
-const StyledContainer = styled('div')`
-  background-color: darkgrey;
-  color: #eee;
-  width: 150px;
-  height: 100px;
-  margin: 5px;
-  padding: 5px;
+const StyledCellContent = styled('div')`
+  background-color: #efefef;
+  border-radius: 10px;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -40,9 +38,22 @@ const StyledContainer = styled('div')`
   text-align: center;
 `;
 
+const StyledContainer = styled('div')`
+  background-color: darkgrey;
+  color: #ccc;
+  width: 150px;
+  height: 100px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+`;
+
 const TimeContainer = styled('div')`
   margin-top: 5px;
-  color: #fff;
+  color: #aaa;
 `;
 
 export default Cell;
