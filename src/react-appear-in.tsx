@@ -6,6 +6,7 @@ export type AppearInProps = {
   minutes?: number,
 
   onAppear?: (time: number) => void,
+  placeholder?: (time: number) => React.ReactNode,
 };
 
 type AppearInState = {
@@ -55,12 +56,13 @@ class AppearIn extends React.Component<AppearInProps, AppearInState> {
   }
 
   render() {
-    const { children } = this.props;
+    const { children, placeholder } = this.props;
     const { visible } = this.state;
 
     return (
       <React.Fragment>
         {visible && children}
+        {!visible && placeholder && placeholder(this.calculateTime())}
       </React.Fragment>
     );
   }

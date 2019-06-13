@@ -14,7 +14,8 @@ describe('<AppearIn/>', () => {
     const element = (
       <AppearIn {...props}>
         <div>Hello World</div>
-      </AppearIn>);
+      </AppearIn>
+    );
 
     return ReactTestRenderer.create(element);
   };
@@ -67,7 +68,7 @@ describe('<AppearIn/>', () => {
   });
 
   it('Calls onAppear prop with time argument when children are rendered', () => {
-    const onAppear  = jest.fn();
+    const onAppear = jest.fn();
     render({ onAppear, seconds: 25 });
 
     jest.advanceTimersByTime(25 * 1000);
@@ -77,10 +78,30 @@ describe('<AppearIn/>', () => {
   });
 
   it('Calls onAppear prop with time argument when children are rendered immediately', () => {
-    const onAppear  = jest.fn();
+    const onAppear = jest.fn();
     render({ onAppear });
 
     expect(onAppear).toHaveBeenCalledTimes(1);
     expect(onAppear).toHaveBeenCalledWith(0);
+  });
+
+  it('Renders provided placeholder before children become visible', () => {
+    // tslint:disable-next-line:variable-name
+    const PlaceHolderMessage = ({ time }: { time: number }) => (
+    <div>{`Will render in ${time}ms`}</div>
+    );
+    const placeholder = (time: number) => <PlaceHolderMessage time={time} />;
+    const rendered = render({ placeholder, milliseconds: 100 });
+
+    rendered.root.findByType(PlaceHolderMessage);
+    jest.advanceTimersByTime(100);
+
+    try {
+      rendered.root.findByType(PlaceHolderMessage);
+      throw new Error('Instance found with node type: "PlaceHolderMessage"');
+    } catch (e) {
+      expect(e.message).toBe('No instances found with node type: "PlaceHolderMessage"');
+    }
+
   });
 });
