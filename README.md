@@ -15,8 +15,13 @@ npm install react-appear-in
 import AppearIn from 'react-appear-in';
 
 const MyAwesomeComponent = () => (
-  <AppearIn minutes={1} seconds={20} milliseconds={10}>
-    Hello in 1 minute, 20 seconds and 10 milliseconds
+  <AppearIn 
+    minutes={1} 
+    seconds={20} 
+    milliseconds={10}
+    placeholder={(time) => <div>{`Will appear in ${time}ms`}</div>}
+  >
+    Hello after 1 minute, 20 seconds and 10 milliseconds
   </AppearIn>
 );
 ```
@@ -28,5 +33,8 @@ const MyAwesomeComponent = () => (
 | `minutes`       | number      | no          |
 | `seconds`       | number      | no          |
 | `milliseconds`  | number      | no          |
+| `placeholder`   | (time: number) => ReactNode | no          |
+
+
 
 When nothing is provided, children will appear immediately.
