@@ -1,15 +1,27 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import AppearIn from 'react-appear-in';
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
 import { generateRandomTime } from './random';
 
 const Cell = () => {
   const [{ minutes, seconds, milliseconds }] = useState({ ...generateRandomTime() });
 
+  const placeholder = useCallback(
+    (time: number) => (
+    <StyledCellPlaceholder time={time} />
+  ),
+    [],
+  );
+
   return (
     <StyledContainer>
-      <AppearIn minutes={minutes} seconds={seconds} milliseconds={milliseconds}>
+      <AppearIn
+        minutes={minutes}
+        seconds={seconds}
+        milliseconds={milliseconds}
+        placeholder={placeholder}
+      >
         <StyledCellContent>
           <div>I appeared after</div>
           <TimeContainer>{minutes}m. {seconds}s. {milliseconds}ms.</TimeContainer>
@@ -18,6 +30,24 @@ const Cell = () => {
     </StyledContainer>
   );
 };
+
+const grow = keyframes`
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+`;
+
+const StyledCellPlaceholder = styled('div')<{time: number}>`
+  animation: ${ props => css`${grow} ${props.time}ms linear;`}
+  background-color: #efefef;
+  border-radius: 10px;
+  display: flex;
+  flex-grow: 1;
+`;
 
 const StyledCellContent = styled('div')`
   background-color: #efefef;
