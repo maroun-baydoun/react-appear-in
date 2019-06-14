@@ -1,32 +1,23 @@
-import React , { PureComponent } from 'react';
+import React, { useState } from 'react';
 import AppearIn from 'react-appear-in';
 import styled from 'styled-components';
 
 import { generateRandomTime } from './random';
 
-type State = {
-  minutes: number,
-  seconds: number,
-  milliseconds: number,
+const Cell = () => {
+  const [{ minutes, seconds, milliseconds }] = useState({ ...generateRandomTime() });
+
+  return (
+    <StyledContainer>
+      <AppearIn minutes={minutes} seconds={seconds} milliseconds={milliseconds}>
+        <StyledCellContent>
+          <div>I appeared after</div>
+          <TimeContainer>{minutes}m. {seconds}s. {milliseconds}ms.</TimeContainer>
+        </StyledCellContent>
+      </AppearIn>
+    </StyledContainer>
+  );
 };
-
-class Cell extends PureComponent<{}, State> {
-  state = { ...generateRandomTime() };
-
-  render() {
-    const { minutes, seconds, milliseconds } = this.state;
-    return (
-      <StyledContainer>
-        <AppearIn minutes={minutes} seconds={seconds} milliseconds={milliseconds}>
-          <StyledCellContent>
-            <div>I appeared after</div>
-            <TimeContainer>{minutes}m. {seconds}s. {milliseconds}ms.</TimeContainer>
-          </StyledCellContent>
-        </AppearIn>
-      </StyledContainer>
-    );
-  }
-}
 
 const StyledCellContent = styled('div')`
   background-color: #efefef;
