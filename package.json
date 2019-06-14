@@ -5,10 +5,10 @@
   "main": "index.js",
   "homepage": "http://maroun-baydoun.com/projects/react-appear-in",
   "dependencies": {
-    "react": "16.7.0",
-    "react-appear-in": "1.0.1",
-    "react-dom": "16.7.0",
-    "styled-components": "4.1.3"
+    "react": "16.8.6",
+    "react-appear-in": "1.1.0",
+    "react-dom": "16.8.6",
+    "styled-components": "4.3.1"
   },
   "devDependencies": {
     "@types/jest": "23.3.10",
@@ -20,10 +20,10 @@
     "gh-pages": "2.0.1",
     "react-scripts": "2.1.1",
     "react-test-renderer": "16.7.0",
-    "tslint": "5.12.0",
+    "tslint": "5.17.0",
     "tslint-config-airbnb": "5.11.1",
     "tslint-react": "3.6.0",
-    "typescript": "3.2.2"
+    "typescript": "3.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
