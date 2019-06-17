@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InfoContainer/> renders component 1`] = `
+<article
+  className="sc-bdVaJa dRWjgs"
+>
+  <h1
+    className="sc-bwzfXH lhaZrg"
+  >
+    React Appear In
+  </h1>
+  <h2
+    className="sc-htpNat QAeAE"
+  >
+    Make react components appear sometime in the future
+  </h2>
+  <section
+    className="sc-bxivhb eWRCNu"
+  >
+    <ol
+      className="sc-ifAKCX iAmjje"
+    >
+      <li>
+        Install
+        <pre
+          className="sc-EHOje hiCJqD"
+        >
+          npm install react-appear-in
+        </pre>
+      </li>
+      <li>
+        Use
+        <pre
+          className="sc-EHOje hiCJqD"
+        >
+          import AppearIn from 'react-appear-in';
+
+
+const MyAwesomeComponent = () =&gt; (
+    &lt;AppearIn minutes={1} seconds={20} milliseconds={10}&gt;
+        Hello in 1 minute, 20 seconds and 10 milliseconds
+    &lt;/AppearIn&gt;
+);
+                        
+        </pre>
+      </li>
+    </ol>
+  </section>
+</article>
+`;

@@ -9,6 +9,7 @@ const CellContainer = () => (
   );
 
 const StyledContainer = styled('div')`
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

@@ -1,7 +1,8 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 import CellContainer from '../CellContainer';
+import InfoContainer from '../InfoContainer';
 
 const GlobalStyle = createGlobalStyle`
   html, body {
@@ -16,18 +17,14 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-class App extends Component {
-  render() {
-    return (
-        <ThemeProvider theme={{}}>
-          <Fragment>
-            <GlobalStyle/>
-            <CellContainer/>
-          </Fragment>
-        </ThemeProvider>
-
-    );
-  }
-}
+const App = () => (
+  <ThemeProvider theme={{}}>
+    <Fragment>
+      <GlobalStyle />
+      <CellContainer />
+      <InfoContainer />
+    </Fragment>
+  </ThemeProvider>
+);
 
 export default App;
