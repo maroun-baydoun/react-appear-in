@@ -2,7 +2,7 @@
 
 exports[`<InfoContainer/> renders component 1`] = `
 <article
-  className="sc-bdVaJa dRWjgs"
+  className="sc-bdVaJa bnVgbd"
 >
   <h1
     className="sc-bwzfXH lhaZrg"
@@ -18,12 +18,12 @@ exports[`<InfoContainer/> renders component 1`] = `
     className="sc-bxivhb eWRCNu"
   >
     <ol
-      className="sc-ifAKCX iAmjje"
+      className="sc-ifAKCX gbyCNU"
     >
       <li>
         Install
         <pre
-          className="sc-EHOje hiCJqD"
+          className="sc-EHOje jMrcrd"
         >
           npm install react-appear-in
         </pre>
@@ -31,7 +31,7 @@ exports[`<InfoContainer/> renders component 1`] = `
       <li>
         Use
         <pre
-          className="sc-EHOje hiCJqD"
+          className="sc-EHOje jMrcrd"
         >
           import AppearIn from 'react-appear-in';
 

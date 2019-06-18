@@ -21,8 +21,8 @@ const App = () => (
   <ThemeProvider theme={{}}>
     <Fragment>
       <GlobalStyle />
-      <CellContainer />
       <InfoContainer />
+      <CellContainer />
     </Fragment>
   </ThemeProvider>
 );

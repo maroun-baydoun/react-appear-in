@@ -14,6 +14,11 @@ const StyledContainer = styled('div')`
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: grey;
+  z-index: 1;
+
+  @media (max-width: 768px) {
+    position: static;
+  }
 `;
 
 export default CellContainer;

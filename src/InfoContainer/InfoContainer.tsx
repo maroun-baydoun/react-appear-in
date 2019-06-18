@@ -43,6 +43,16 @@ const StyledContainer = styled('article')`
   padding: 16px;
   border-radius: 10px;
   box-shadow: 1px 1px 10px #333;
+  z-index: 100;
+
+  @media (max-width: 768px) {
+    position: static;
+    transform: none;
+    min-height: auto;
+    width: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
 `;
 
 const H1 = styled('h1')`
@@ -67,6 +77,10 @@ const Ol = styled('ol')`
     padding: 0;
     max-width: 70%;
     font-family: 'B612',sans-serif;
+
+    @media (max-width: 768px) {
+        max-width: none;
+    }
 `;
 
 const Code = styled('pre')`
@@ -74,6 +88,9 @@ const Code = styled('pre')`
     color: #000;
     padding: 16px;
     border-radius: 2px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
 `;
 
 export default InfoContainer;
