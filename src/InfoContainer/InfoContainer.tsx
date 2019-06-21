@@ -1,4 +1,6 @@
 import React from 'react';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import Theme from 'react-syntax-highlighter/dist/styles/hljs/ascetic';
 import styled from 'styled-components';
 
 const InfoContainer = () => (
@@ -25,11 +27,17 @@ const InfoContainer = () => (
             <Ol>
                 <li>
                     Install
-                    <Code>npm install react-appear-in</Code>
+                    <SyntaxHighlighter
+                        style={Theme}
+                        language="bash"
+                    >
+                    npm install react-appear-in
+                    </SyntaxHighlighter>
                 </li>
                 <li>
                     Use
-                    <Code>{
+                    {/* tslint:disable-next-line:jsx-no-multiline-js */}
+                    <SyntaxHighlighter style={Theme}>{
                         `import AppearIn from 'react-appear-in';
 
 
@@ -40,7 +48,7 @@ const MyAwesomeComponent = () => (
 );
                         `
                     }
-                    </Code>
+                    </SyntaxHighlighter>
                 </li>
             </Ol>
         </Content>
