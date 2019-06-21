@@ -16,15 +16,35 @@ Array [
       Make react components appear sometime in the future
     </h2>
     <section
-      className="sc-htoDjs hEquMq"
+      className="sc-htoDjs kbSpHw"
+    >
+      <a
+        aria-label="Star maroun-baydoun/react-appear-in on GitHub"
+        className="github-button"
+        href="https://github.com/maroun-baydoun/react-appear-in"
+      >
+        Star
+      </a>
+      <a
+        href="https://badge.fury.io/js/react-appear-in"
+      >
+        <img
+          alt="npm version"
+          height="18"
+          src="https://badge.fury.io/js/react-appear-in.svg"
+        />
+      </a>
+    </section>
+    <section
+      className="sc-dnqmqq edBwqg"
     >
       <ol
-        className="sc-dnqmqq bRxHeL"
+        className="sc-iwsKbI gPznpp"
       >
         <li>
           Install
           <pre
-            className="sc-iwsKbI hPlRLt"
+            className="sc-gZMcBi bUemqo"
           >
             npm install react-appear-in
           </pre>
@@ -32,7 +52,7 @@ Array [
         <li>
           Use
           <pre
-            className="sc-iwsKbI hPlRLt"
+            className="sc-gZMcBi bUemqo"
           >
             import AppearIn from 'react-appear-in';
 
@@ -55,399 +75,420 @@ const MyAwesomeComponent = () =&gt; (
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa fgnpOk"
+        className="sc-bdVaJa hPzkWW"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa fIDxMd"
+        className="sc-bdVaJa ktSqyG"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa hJzwUV"
+        className="sc-bdVaJa dbEwJE"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa jLwrYt"
+        className="sc-bdVaJa kjioOr"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa dpJpaH"
+        className="sc-bdVaJa gydeMD"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa jRyPRe"
+        className="sc-bdVaJa cSuzph"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa djdHFx"
+        className="sc-bdVaJa epNMhn"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa uEtSD"
+        className="sc-bdVaJa lhleME"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa UDGmw"
+        className="sc-bdVaJa iOwyOV"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa cdYJpq"
+        className="sc-bdVaJa hOzifa"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa kPZLHO"
+        className="sc-bdVaJa cZHfpq"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa eFatVl"
+        className="sc-bdVaJa dPAzRi"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa hFbScF"
+        className="sc-bdVaJa chSjxX"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa kzFHIT"
+        className="sc-bdVaJa dXJFLs"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa bNbAgI"
+        className="sc-bdVaJa ekyiZS"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa ldXXCr"
+        className="sc-bdVaJa keCJbJ"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa gCNutr"
+        className="sc-bdVaJa easVrn"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa gAPNxA"
+        className="sc-bdVaJa dnrWoQ"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa kkzhYo"
+        className="sc-bdVaJa dGaBTE"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa eVAIxI"
+        className="sc-bdVaJa fpZvnG"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa fZpNGB"
+        className="sc-bdVaJa jnPtNC"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa icWrNj"
+        className="sc-bdVaJa Lnhbl"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa fmBxhy"
+        className="sc-bdVaJa iNuZRR"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa gjOrfs"
+        className="sc-bdVaJa bvKeSV"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa iNStKI"
+        className="sc-bdVaJa cNEmTx"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa hmyfJW"
+        className="sc-bdVaJa bwvsmr"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa dtHWHJ"
+        className="sc-bdVaJa bxNycE"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa lepaVN"
+        className="sc-bdVaJa drEFto"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa fzunlv"
+        className="sc-bdVaJa lbyjIx"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa fSsKMi"
+        className="sc-bdVaJa kriFZZ"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa afpMz"
+        className="sc-bdVaJa GOzZd"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa eZBHYW"
+        className="sc-bdVaJa hwJhfR"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa jZiuGg"
+        className="sc-bdVaJa ihmnux"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa jopSJc"
+        className="sc-bdVaJa igMdaU"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa klYnEy"
+        className="sc-bdVaJa gcNcMh"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa EOBpa"
+        className="sc-bdVaJa idwBiA"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa hBvSnW"
+        className="sc-bdVaJa dWwarb"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa dTNXWr"
+        className="sc-bdVaJa hPTVHC"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa hHYfpa"
+        className="sc-bdVaJa lgKYxQ"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa cKPNMl"
+        className="sc-bdVaJa kUUfgr"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa cpEJnz"
+        className="sc-bdVaJa exNLuO"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa gPlIta"
+        className="sc-bdVaJa fuFiWk"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa hFbScF"
+        className="sc-bdVaJa bwXfFX"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa jdjGgR"
+        className="sc-bdVaJa kmjToU"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa hKywnX"
+        className="sc-bdVaJa fUpkYe"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa gHHVnP"
+        className="sc-bdVaJa eMwVlh"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa hMXhHb"
+        className="sc-bdVaJa jtcoOx"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa iLvcfR"
+        className="sc-bdVaJa imAVwU"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa Ynvj"
+        className="sc-bdVaJa joSSyv"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa daHluz"
+        className="sc-bdVaJa cfPPSS"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa cnfGKi"
+        className="sc-bdVaJa cRuEvh"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa hDxBPA"
+        className="sc-bdVaJa cvrRUN"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa kCVTAu"
+        className="sc-bdVaJa dPbDiq"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa hHBSXu"
+        className="sc-bdVaJa iUrJNM"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa eLiHEV"
+        className="sc-bdVaJa kpKAQV"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa izHSDI"
+        className="sc-bdVaJa jFHbOR"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa huXWJH"
+        className="sc-bdVaJa bBtFrD"
+      />
+    </div>
+    <div
+      className="sc-htpNat cdFCkK"
+    >
+      <div
+        className="sc-bdVaJa gvHRLE"
+      />
+    </div>
+    <div
+      className="sc-htpNat cdFCkK"
+    >
+      <div
+        className="sc-bdVaJa eqYjRI"
+      />
+    </div>
+    <div
+      className="sc-htpNat cdFCkK"
+    >
+      <div
+        className="sc-bdVaJa iiYHqC"
       />
     </div>
     <div
@@ -461,294 +502,273 @@ const MyAwesomeComponent = () =&gt; (
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa digFWH"
+        className="sc-bdVaJa dzybST"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa bKTYia"
+        className="sc-bdVaJa kFRjt"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa fzZPin"
+        className="sc-bdVaJa bPGBLQ"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa PwEIZ"
+        className="sc-bdVaJa ezZKmD"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa gIyQd"
+        className="sc-bdVaJa ehDLMM"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa cyVQxY"
+        className="sc-bdVaJa kUNzqB"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa hlyXns"
+        className="sc-bdVaJa bYCzUU"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa cxtZtm"
+        className="sc-bdVaJa cFiSjC"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa jsGfIi"
+        className="sc-bdVaJa eZHIQf"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa bGZVRB"
+        className="sc-bdVaJa czQoJi"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa gDuEcI"
+        className="sc-bdVaJa kFeNae"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa gMGjmG"
+        className="sc-bdVaJa jxWwEq"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa gFWreP"
+        className="sc-bdVaJa ePRIyP"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa gtOiDo"
+        className="sc-bdVaJa SPeEO"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa ehOmOO"
+        className="sc-bdVaJa iwnnqK"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa jEEabi"
+        className="sc-bdVaJa cKPNMl"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa hTHjeb"
+        className="sc-bdVaJa jXqdWt"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa jDdbwY"
+        className="sc-bdVaJa GjtSt"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa hFbScF"
+        className="sc-bdVaJa lbJyFe"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa gMbKDw"
+        className="sc-bdVaJa kfOaqO"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa ifmHOP"
+        className="sc-bdVaJa cLKaoJ"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa fWZDlP"
+        className="sc-bdVaJa gEafDw"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa nSuEC"
+        className="sc-bdVaJa laBpMA"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa cBiMwx"
+        className="sc-bdVaJa cfGScX"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa efamPg"
+        className="sc-bdVaJa dOeGQ"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa eaLfai"
+        className="sc-bdVaJa fMwVxz"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa jAbpzz"
+        className="sc-bdVaJa jnuRkU"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa bfGEHc"
+        className="sc-bdVaJa eZtJBR"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa hqGtqa"
+        className="sc-bdVaJa jNsTfg"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa eluZbI"
+        className="sc-bdVaJa rwyFg"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa jIuvCN"
+        className="sc-bdVaJa dFEnCr"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa gZrorW"
+        className="sc-bdVaJa bWBmcb"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa elWaTO"
+        className="sc-bdVaJa bRXcpg"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa abagt"
+        className="sc-bdVaJa joQXSN"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa kfQXZp"
+        className="sc-bdVaJa crhUXg"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa dacOmu"
+        className="sc-bdVaJa iBWSVc"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa bFaUhc"
+        className="sc-bdVaJa doIIcK"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa llcUhr"
+        className="sc-bdVaJa ctcVLf"
       />
     </div>
     <div
       className="sc-htpNat cdFCkK"
     >
       <div
-        className="sc-bdVaJa fhyAa"
-      />
-    </div>
-    <div
-      className="sc-htpNat cdFCkK"
-    >
-      <div
-        className="sc-bdVaJa hGZOHI"
-      />
-    </div>
-    <div
-      className="sc-htpNat cdFCkK"
-    >
-      <div
-        className="sc-bdVaJa ldYcfk"
-      />
-    </div>
-    <div
-      className="sc-htpNat cdFCkK"
-    >
-      <div
-        className="sc-bdVaJa gmrHWT"
+        className="sc-bdVaJa kqNKXz"
       />
     </div>
   </div>,

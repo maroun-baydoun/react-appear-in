@@ -15,15 +15,35 @@ exports[`<InfoContainer/> renders component 1`] = `
     Make react components appear sometime in the future
   </h2>
   <section
-    className="sc-bxivhb eWRCNu"
+    className="sc-bxivhb dUaZrv"
+  >
+    <a
+      aria-label="Star maroun-baydoun/react-appear-in on GitHub"
+      className="github-button"
+      href="https://github.com/maroun-baydoun/react-appear-in"
+    >
+      Star
+    </a>
+    <a
+      href="https://badge.fury.io/js/react-appear-in"
+    >
+      <img
+        alt="npm version"
+        height="18"
+        src="https://badge.fury.io/js/react-appear-in.svg"
+      />
+    </a>
+  </section>
+  <section
+    className="sc-ifAKCX bZRUBm"
   >
     <ol
-      className="sc-ifAKCX gbyCNU"
+      className="sc-EHOje bmvnpT"
     >
       <li>
         Install
         <pre
-          className="sc-EHOje jMrcrd"
+          className="sc-bZQynM hVMapG"
         >
           npm install react-appear-in
         </pre>
@@ -31,7 +51,7 @@ exports[`<InfoContainer/> renders component 1`] = `
       <li>
         Use
         <pre
-          className="sc-EHOje jMrcrd"
+          className="sc-bZQynM hVMapG"
         >
           import AppearIn from 'react-appear-in';
 

@@ -5,6 +5,22 @@ const InfoContainer = () => (
     <StyledContainer>
         <H1>React Appear In</H1>
         <H2>Make react components appear sometime in the future</H2>
+        <HeaderLinksContainer>
+            <a
+                className="github-button"
+                href="https://github.com/maroun-baydoun/react-appear-in"
+                aria-label="Star maroun-baydoun/react-appear-in on GitHub"
+            >
+                Star
+            </a>
+            <a href="https://badge.fury.io/js/react-appear-in">
+                <img
+                    src="https://badge.fury.io/js/react-appear-in.svg"
+                    alt="npm version"
+                    height="18"
+                />
+            </a>
+        </HeaderLinksContainer>
         <Content>
             <Ol>
                 <li>
@@ -68,8 +84,22 @@ const H2 = styled('h2')`
     color: #aaa;
 `;
 
+const HeaderLinksContainer = styled('section')`
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+
+  & > * {
+      display: flex;
+  }
+
+  & > * + * {
+    margin-left: 8px;
+   }
+`;
+
 const Content = styled('section')`
-    margin-top: 32px;
+    margin-top: 16px;
     padding: 16px;
 `;
 
