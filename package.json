@@ -5,7 +5,7 @@
   "main": "dist/react-appear-in.js",
   "types": "types/react-appear-in.d.ts",
   "scripts": {
-    "format": "prettier --write './**/*.{tsx,d.ts}'",
+    "format": "prettier --write './**/*.tsx' 'webpack.config.js'",
     "test": "jest test",
     "test:watch": "jest test --watch",
     "build": "webpack --mode production",
