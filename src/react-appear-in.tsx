@@ -1,71 +1,50 @@
-import React from 'react';
+import React, { useState, useMemo, useEffect } from "react";
 
 export type AppearInProps = {
-  milliseconds?: number,
-  seconds?: number,
-  minutes?: number,
+  milliseconds?: number;
+  seconds?: number;
+  minutes?: number;
 
-  onAppear?: (time: number) => void,
-  placeholder?: (time: number) => React.ReactNode,
+  onAppear?: (time: number) => void;
+  placeholder?: (time: number) => React.ReactNode;
 };
 
-type AppearInState = {
-  visible: boolean,
-};
+const AppearIn: React.FC<AppearInProps> = ({
+  milliseconds,
+  seconds,
+  minutes,
+  placeholder,
+  onAppear,
+  children,
+}) => {
+  const [visible, setVisible] = useState(false);
 
-class AppearIn extends React.Component<AppearInProps, AppearInState> {
+  const time = useMemo(() => {
+    return (milliseconds || 0) + (seconds || 0) * 1000 + (minutes || 0) * 60000;
+  }, [milliseconds, seconds, minutes]);
 
-  state = {
-    visible: false,
-  };
-
-  componentDidMount() {
-    const time = this.calculateTime();
-
-    const onStateUpdated = () => {
-      const { onAppear } = this.props;
+  useEffect(() => {
+    const setVisibleTrue = () => {
+      setVisible(true);
 
       if (onAppear) {
         onAppear(time);
       }
     };
 
-    const updateState = () => {
-      this.setState(
-        {
-          visible: true,
-        },
-        onStateUpdated,
-      );
-    };
-
     if (time === 0) {
-      updateState();
+      setVisibleTrue();
     } else {
-      setTimeout(
-        updateState,
-        time,
-      );
+      setTimeout(setVisibleTrue, time);
     }
-  }
+  }, [time, onAppear]);
 
-  calculateTime = () => {
-    const { milliseconds, seconds, minutes } = this.props;
+  return (
+    <React.Fragment>
+      {visible ? children : null}
+      {!visible && placeholder ? placeholder(time) : null}
+    </React.Fragment>
+  );
+};
 
-    return (milliseconds || 0) + ((seconds || 0) * 1000) + ((minutes || 0) * 60000);
-  }
-
-  render() {
-    const { children, placeholder } = this.props;
-    const { visible } = this.state;
-
-    return (
-      <React.Fragment>
-        {visible && children}
-        {!visible && placeholder && placeholder(this.calculateTime())}
-      </React.Fragment>
-    );
-  }
-}
-
-export default AppearIn ;
+export default AppearIn;
