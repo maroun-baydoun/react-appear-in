@@ -1,0 +1,59 @@
+@import "variables";
+@import "mixins";
+
+@keyframes cell-placeholder-grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.cell-container {
+  width: 50vw;
+  padding: 1em 1em 1em 0;
+  flex-wrap: wrap;
+
+  @include flex($justify-content: space-between);
+
+  @media #{$media-mobile} {
+    width: auto;
+    padding: 0;
+  }
+
+  .cell {
+    background-color: darkgrey;
+    color: #ccc;
+    width: 150px;
+    height: 100px;
+    flex-grow: 1;
+
+    @include flex-column();
+    @include padding(1, 1);
+    @include margin(1, 1);
+
+    &__content {
+      background-color: #efefef;
+      text-align: center;
+      flex-grow: 1;
+
+      @include flex-column-centered();
+    }
+
+    &__placeholder {
+      animation-name: cell-placeholder-grow;
+      animation-timing-function: linear;
+      background-color: #efefef;
+      flex-grow: 1;
+
+      @include flex();
+    }
+
+    &__time {
+      color: #aaa;
+
+      @include margin-top(1);
+    }
+  }
+}
