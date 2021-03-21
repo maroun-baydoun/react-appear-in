@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo, useEffect, useRef } from "react";
 
 export type AppearInProps = {
   milliseconds?: number;
@@ -17,27 +17,38 @@ const AppearIn: React.FC<AppearInProps> = ({
   onAppear,
   children,
 }) => {
-  const [visible, setVisible] = useState(false);
-
   const time = useMemo(() => {
     return (milliseconds || 0) + (seconds || 0) * 1000 + (minutes || 0) * 60000;
   }, [milliseconds, seconds, minutes]);
 
+  const timeOutRef = useRef<number | null>(null);
+  const [visible, setVisible] = useState(time === 0);
+
   useEffect(() => {
     const setVisibleTrue = () => {
       setVisible(true);
-
-      if (onAppear) {
-        onAppear(time);
-      }
     };
 
     if (time === 0) {
       setVisibleTrue();
     } else {
-      setTimeout(setVisibleTrue, time);
+      timeOutRef.current = window.setTimeout(setVisibleTrue, time);
     }
+
+    return () => {
+      if (timeOutRef.current !== null) {
+        window.clearTimeout(timeOutRef.current);
+        timeOutRef.current = null;
+      }
+      setVisible(false);
+    };
   }, [time, onAppear]);
+
+  useEffect(() => {
+    if (visible && onAppear) {
+      onAppear(time);
+    }
+  }, [visible, onAppear]);
 
   return (
     <React.Fragment>

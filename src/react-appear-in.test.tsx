@@ -10,15 +10,14 @@ describe("<AppearIn/>", () => {
     jest.useFakeTimers();
   });
 
-  const render = (props?: AppearInProps) => {
-    const element = (
-      <AppearIn {...props}>
-        <div>Hello World</div>
-      </AppearIn>
-    );
+  const element = (props?: AppearInProps) => (
+    <AppearIn {...props}>
+      <div>Hello World</div>
+    </AppearIn>
+  );
 
-    return ReactTestRenderer.create(element);
-  };
+  const render = (props?: AppearInProps) =>
+    ReactTestRenderer.create(element(props));
 
   it("Renders children immediately when no props are provided", () => {
     let rendered: ReactTestRenderer.ReactTestRenderer | null = null;
@@ -99,6 +98,48 @@ describe("<AppearIn/>", () => {
     expect(rendered!.root.children.length).toBe(1);
   });
 
+  it("Clears timeout on unmount", () => {
+    let rendered: ReactTestRenderer.ReactTestRenderer | null = null;
+
+    act(() => {
+      rendered = render({ seconds: 5 });
+    });
+
+    act(() => {
+      rendered!.unmount();
+    });
+
+    expect(clearTimeout).toHaveBeenCalledTimes(1);
+  });
+
+  it("Doesn't clear timeout on unmount when children appear immediately", () => {
+    let rendered: ReactTestRenderer.ReactTestRenderer | null = null;
+
+    act(() => {
+      rendered = render();
+    });
+
+    act(() => {
+      rendered!.unmount();
+    });
+
+    expect(clearTimeout).toHaveBeenCalledTimes(0);
+  });
+
+  it("Clears timeout on time change", () => {
+    let rendered: ReactTestRenderer.ReactTestRenderer | null = null;
+
+    act(() => {
+      rendered = render({ seconds: 5 });
+    });
+
+    act(() => {
+      rendered!.update(element({ seconds: 10 }));
+    });
+
+    expect(clearTimeout).toHaveBeenCalledTimes(1);
+  });
+
   it("Calls onAppear prop with time argument when children are rendered", () => {
     const onAppear = jest.fn();
 
@@ -112,6 +153,26 @@ describe("<AppearIn/>", () => {
 
     expect(onAppear).toHaveBeenCalledTimes(1);
     expect(onAppear).toHaveBeenCalledWith(25 * 1000);
+  });
+
+  it("Calls onAppear prop with time argument when children are rendered after time change", () => {
+    const onAppear = jest.fn();
+    let rendered: ReactTestRenderer.ReactTestRenderer | null = null;
+
+    act(() => {
+      rendered = render({ onAppear, seconds: 25 });
+    });
+
+    act(() => {
+      rendered!.update(element({onAppear, seconds: 10 }));
+    });
+
+    act(() => {
+      jest.advanceTimersByTime(10 * 1000);
+    });
+
+    expect(onAppear).toHaveBeenCalledTimes(1);
+    expect(onAppear).toHaveBeenCalledWith(10 * 1000);
   });
 
   it("Calls onAppear prop with time argument when children are rendered immediately", () => {
