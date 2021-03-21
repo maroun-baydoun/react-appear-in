@@ -1,6 +1,6 @@
 {
   "name": "react-appear-in",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Make react components appear sometime in the future",
   "main": "dist/react-appear-in.js",
   "types": "types/react-appear-in.d.ts",
