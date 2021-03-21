@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/maroun-baydoun/react-appear-in/issues"
   },
-  "homepage": "http://www.maroun-baydoun.com/projects/react-appear-in/",
+  "homepage": "https://dev.maroun-baydoun.com/react-appear-in/",
   "keywords": [
     "react",
     "appear",
@@ -37,7 +37,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "26.0.20",
+    "@types/jest": "26.0.21",
     "@types/react": "16.8.0",
     "@types/react-test-renderer": "16.8.1",
     "clean-webpack-plugin": "3.0.0",
@@ -45,10 +45,10 @@
     "prettier": "2.2.1",
     "react": "16.8.0",
     "react-test-renderer": "16.8.0",
-    "ts-jest": "26.5.0",
-    "ts-loader": "8.0.15",
-    "typescript": "4.1.3",
-    "webpack": "5.21.0",
+    "ts-jest": "26.5.4",
+    "ts-loader": "8.0.18",
+    "typescript": "4.2.3",
+    "webpack": "5.27.1",
     "webpack-cli": "4.5.0"
   },
   "peerDependencies": {

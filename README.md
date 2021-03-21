@@ -38,3 +38,7 @@ const MyAwesomeComponent = () => (
 
 
 When nothing is provided, children will appear immediately.
+
+### Demo 
+
+Give it a try [here](https://dev.maroun-baydoun.com/react-appear-in/#demo).

@@ -21,7 +21,7 @@ describe("<AppearIn/>", () => {
   };
 
   it("Renders children immediately when no props are provided", () => {
-    let rendered: ReactTestRenderer.ReactTestRenderer;
+    let rendered: ReactTestRenderer.ReactTestRenderer | null = null;
 
     act(() => {
       rendered = render();
@@ -32,71 +32,71 @@ describe("<AppearIn/>", () => {
   });
 
   it("Renders children after the specified milliseconds have ellapsed", () => {
-    let rendered: ReactTestRenderer.ReactTestRenderer;
+    let rendered: ReactTestRenderer.ReactTestRenderer | null = null;
 
     act(() => {
       rendered = render({ milliseconds: 100 });
     });
 
     expect(setTimeout).toHaveBeenCalledTimes(1);
-    expect(rendered.root.children.length).toBe(0);
+    expect(rendered!.root.children.length).toBe(0);
 
     act(() => {
       jest.advanceTimersByTime(100);
     });
 
-    expect(rendered.root.children.length).toBe(1);
+    expect(rendered!.root.children.length).toBe(1);
   });
 
   it("Renders children after the specified seconds have ellapsed", () => {
-    let rendered: ReactTestRenderer.ReactTestRenderer;
+    let rendered: ReactTestRenderer.ReactTestRenderer | null = null;
 
     act(() => {
       rendered = render({ seconds: 5 });
     });
 
     expect(setTimeout).toHaveBeenCalledTimes(1);
-    expect(rendered.root.children.length).toBe(0);
+    expect(rendered!.root.children.length).toBe(0);
 
     act(() => {
       jest.advanceTimersByTime(5 * 1000);
     });
 
-    expect(rendered.root.children.length).toBe(1);
+    expect(rendered!.root.children.length).toBe(1);
   });
 
   it("Renders children after the specified minutes have ellapsed", () => {
-    let rendered: ReactTestRenderer.ReactTestRenderer;
+    let rendered: ReactTestRenderer.ReactTestRenderer | null = null;
 
     act(() => {
       rendered = render({ minutes: 1 });
     });
 
     expect(setTimeout).toHaveBeenCalledTimes(1);
-    expect(rendered.root.children.length).toBe(0);
+    expect(rendered!.root.children.length).toBe(0);
 
     act(() => {
       jest.advanceTimersByTime(60 * 1000);
     });
 
-    expect(rendered.root.children.length).toBe(1);
+    expect(rendered!.root.children.length).toBe(1);
   });
 
   it("Renders children after the specified minutes, seconds and milliseconds have ellapsed", () => {
-    let rendered: ReactTestRenderer.ReactTestRenderer;
+    let rendered: ReactTestRenderer.ReactTestRenderer | null = null;
 
     act(() => {
       rendered = render({ minutes: 1, seconds: 25, milliseconds: 10 });
     });
 
     expect(setTimeout).toHaveBeenCalledTimes(1);
-    expect(rendered.root.children.length).toBe(0);
+    expect(rendered!.root.children.length).toBe(0);
 
     act(() => {
       jest.advanceTimersByTime((60 + 25) * 1000 + 10);
     });
 
-    expect(rendered.root.children.length).toBe(1);
+    expect(rendered!.root.children.length).toBe(1);
   });
 
   it("Calls onAppear prop with time argument when children are rendered", () => {
@@ -131,19 +131,19 @@ describe("<AppearIn/>", () => {
     );
     const placeholder = (time: number) => <PlaceHolderMessage time={time} />;
 
-    let rendered: ReactTestRenderer.ReactTestRenderer;
+    let rendered: ReactTestRenderer.ReactTestRenderer | null = null;
 
     act(() => {
       rendered = render({ placeholder, milliseconds: 100 });
     });
 
-    rendered.root.findByType(PlaceHolderMessage);
+    rendered!.root.findByType(PlaceHolderMessage);
     act(() => {
       jest.advanceTimersByTime(100);
     });
 
     try {
-      rendered.root.findByType(PlaceHolderMessage);
+      rendered!.root.findByType(PlaceHolderMessage);
       throw new Error('Instance found with node type: "PlaceHolderMessage"');
     } catch (e) {
       expect(e.message).toBe(

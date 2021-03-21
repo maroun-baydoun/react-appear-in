@@ -1,14 +1,14 @@
-const path = require("path");
+const { resolve } = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const PATHS = {
-  src: path.join(__dirname, "./src"),
-  dist: path.join(__dirname, "./dist"),
+  src: resolve(__dirname, "./src"),
+  dist: resolve(__dirname, "./dist"),
 };
 
 module.exports = {
   entry: {
-    "react-appear-in": path.join(PATHS.src, "react-appear-in.tsx"),
+    "react-appear-in": resolve(PATHS.src, "react-appear-in.tsx"),
   },
   output: {
     path: PATHS.dist,
@@ -34,7 +34,10 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: [path.join(process.cwd(), "types")],
+      cleanOnceBeforeBuildPatterns: [
+        resolve(process.cwd(), "dist"),
+        resolve(process.cwd(), "types"),
+      ],
     }),
   ],
 };
