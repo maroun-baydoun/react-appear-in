@@ -10,49 +10,51 @@
   }
 }
 
-.cell-container {
-  width: 50vw;
-  flex-wrap: wrap;
+.demo-container {
+  .cell-container {
+    width: 50vw;
+    flex-wrap: wrap;
 
-  @include flex($justify-content: space-between);
-  @include margin-top(1);
+    @include flex($justify-content: space-between);
+    @include margin-top(1);
 
-  @media #{$media-mobile} {
-    width: auto;
-    padding: 0;
-  }
-
-  .cell {
-    background-color: darkgrey;
-    color: #ccc;
-    width: 150px;
-    height: 100px;
-    flex-grow: 1;
-
-    @include flex-column();
-    @include padding(1, 1);
-
-    &__content {
-      background-color: #efefef;
-      text-align: center;
-      flex-grow: 1;
-
-      @include flex-column-centered();
+    @media #{$media-mobile} {
+      width: auto;
+      padding: 0;
     }
 
-    &__placeholder {
-      animation-name: cell-placeholder-grow;
-      animation-timing-function: linear;
-      background-color: #efefef;
+    .cell {
+      background-color: darkgrey;
+      color: #ccc;
+      width: 150px;
+      height: 100px;
       flex-grow: 1;
 
-      @include flex();
-    }
+      @include flex-column();
+      @include padding(1, 1);
 
-    &__time {
-      color: #aaa;
+      &__content {
+        background-color: #efefef;
+        text-align: center;
+        flex-grow: 1;
 
-      @include margin-top(1);
+        @include flex-column-centered();
+      }
+
+      &__placeholder {
+        animation-name: cell-placeholder-grow;
+        animation-timing-function: linear;
+        background-color: #efefef;
+        flex-grow: 1;
+
+        @include flex();
+      }
+
+      &__time {
+        color: #aaa;
+
+        @include margin-top(1);
+      }
     }
   }
 }
