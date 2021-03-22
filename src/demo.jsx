@@ -1,21 +1,10 @@
-import React, { Fragment, useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 
-import CellContainer from "./CellContainer";
+import Cell from "./Cell";
 
 const Demo = () => {
-  const [demoVisible, setDemoVisible] = useState(false);
-
-  return (
-    <Fragment>
-      {demoVisible ? <CellContainer /> : null}
-      {!demoVisible ? (
-        <button className="button" onClick={() => setDemoVisible(true)}>
-          Start
-        </button>
-      ) : null}
-    </Fragment>
-  );
+  return <Cell />;
 };
 
 ReactDOM.render(<Demo />, document.querySelector(".demo-container"));
