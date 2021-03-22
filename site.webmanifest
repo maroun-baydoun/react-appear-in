@@ -1,7 +1,7 @@
 {
   "name": "react-appear-in",
   "short_name": "react-appear-in",
-  "description": "Make React components appear after a given duration in minutes, seconds and milliseconds.",
+  "description": "Make React components appear after a given duration in minutes, seconds and milliseconds. Try the demo and get the package on npm.",
   "icons": [
     {
       "src": "android-chrome-192x192.png",
