@@ -62,6 +62,44 @@ const MyAwesomeComponent = () => (
         Hello in 1 minute, 20 seconds and 10 milliseconds
     &lt;/AppearIn&gt;
 );</code></pre>
+
+        <hr class="hr--large"/>
+        <h3 id="props">Props</h3>
+        <table class="table table--striped">
+            <thead>
+                <th>Prop</th>
+                <th>Type</th>
+                <th>Notes</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="monospace">minutes</td>
+                    <td class="monospace">number</td>
+                    <td>Optional</td>
+                </tr>
+                <tr>
+                    <td class="monospace">seconds</td>
+                    <td class="monospace">number</td>
+                    <td>Optional</td>
+                </tr>
+                <tr>
+                    <td class="monospace">milliseconds</td>
+                    <td class="monospace">number</td>
+                    <td>Optional</td>
+                </tr>
+                <tr>
+                    <td class="monospace">placeholder</td>
+                    <td class="monospace">(time: number) => ReactNode</td>
+                    <td>Optional. <span class="monospace">time</span> is in milliseconds.</td>
+                </tr>
+                <tr>
+                    <td class="monospace">onAppear</td>
+                    <td class="monospace">(time: number) => void</td>
+                    <td>Optional. <span class="monospace">time</span> is in milliseconds.</td>
+                </tr>
+            </tbody>
+        </table>
+
         <hr class="hr--large"/>
         <h3 id="demo">Demo</a></h3>
         <div class="demo-container"></div>
