@@ -24,8 +24,8 @@
     }
 
     .cell {
-      border: 1px dashed #ccc;
-      color: #666;
+      border: 1px solid $border-color;
+      color: $body-color2;
       width: 150px;
       height: 150px;
       flex-grow: 1;
