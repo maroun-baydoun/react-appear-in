@@ -21,7 +21,7 @@ const AppearIn: React.FC<AppearInProps> = ({
     return (milliseconds || 0) + (seconds || 0) * 1000 + (minutes || 0) * 60000;
   }, [milliseconds, seconds, minutes]);
 
-  const timeOutRef = useRef<number | null>(null);
+  const timeOutRef = useRef<NodeJS.Timeout | null>(null);
   const [visible, setVisible] = useState(time === 0);
 
   useEffect(() => {
@@ -32,12 +32,12 @@ const AppearIn: React.FC<AppearInProps> = ({
     if (time === 0) {
       setVisibleTrue();
     } else {
-      timeOutRef.current = window.setTimeout(setVisibleTrue, time);
+      timeOutRef.current = setTimeout(setVisibleTrue, time);
     }
 
     return () => {
       if (timeOutRef.current !== null) {
-        window.clearTimeout(timeOutRef.current);
+        clearTimeout(timeOutRef.current);
         timeOutRef.current = null;
       }
       setVisible(false);

@@ -5,9 +5,17 @@ import AppearIn, { AppearInProps } from "./react-appear-in";
 
 describe("<AppearIn/>", () => {
   const { act } = ReactTestRenderer;
+  let setTimeoutSpy: jest.SpyInstance;
+  let clearTimeoutSpy: jest.SpyInstance;
 
   beforeEach(() => {
     jest.useFakeTimers();
+
+    setTimeoutSpy = jest.spyOn(global, "setTimeout");
+    clearTimeoutSpy = jest.spyOn(global, "clearTimeout");
+
+    setTimeoutSpy.mockClear();
+    clearTimeoutSpy.mockClear();
   });
 
   const element = (props?: AppearInProps) => (
@@ -26,7 +34,7 @@ describe("<AppearIn/>", () => {
       rendered = render();
     });
 
-    expect(setTimeout).toHaveBeenCalledTimes(0);
+    expect(setTimeoutSpy).toHaveBeenCalledTimes(0);
     expect(rendered!.root.children.length).toBe(1);
   });
 
@@ -37,7 +45,7 @@ describe("<AppearIn/>", () => {
       rendered = render({ milliseconds: 100 });
     });
 
-    expect(setTimeout).toHaveBeenCalledTimes(1);
+    expect(setTimeoutSpy).toHaveBeenCalledTimes(1);
     expect(rendered!.root.children.length).toBe(0);
 
     act(() => {
@@ -54,7 +62,7 @@ describe("<AppearIn/>", () => {
       rendered = render({ seconds: 5 });
     });
 
-    expect(setTimeout).toHaveBeenCalledTimes(1);
+    expect(setTimeoutSpy).toHaveBeenCalledTimes(1);
     expect(rendered!.root.children.length).toBe(0);
 
     act(() => {
@@ -71,7 +79,7 @@ describe("<AppearIn/>", () => {
       rendered = render({ minutes: 1 });
     });
 
-    expect(setTimeout).toHaveBeenCalledTimes(1);
+    expect(setTimeoutSpy).toHaveBeenCalledTimes(1);
     expect(rendered!.root.children.length).toBe(0);
 
     act(() => {
@@ -88,7 +96,7 @@ describe("<AppearIn/>", () => {
       rendered = render({ minutes: 1, seconds: 25, milliseconds: 10 });
     });
 
-    expect(setTimeout).toHaveBeenCalledTimes(1);
+    expect(setTimeoutSpy).toHaveBeenCalledTimes(1);
     expect(rendered!.root.children.length).toBe(0);
 
     act(() => {
@@ -164,7 +172,7 @@ describe("<AppearIn/>", () => {
     });
 
     act(() => {
-      rendered!.update(element({onAppear, seconds: 10 }));
+      rendered!.update(element({ onAppear, seconds: 10 }));
     });
 
     act(() => {
