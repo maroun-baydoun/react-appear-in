@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: oklch(0.77 0.12 214);
+  --color-accent-foreground: oklch(0.16 0.03 245);
+  --color-foreground: oklch(0.98 0.01 245);
+  --color-surface: oklch(0.16 0.03 245);
+  --color-surface-elevated: oklch(0.2 0.03 245);
+  --color-muted: oklch(0.78 0.02 245);
+  --color-border: oklch(1 0 0 / 0.12);
+  --color-snippet-keyword: #67e8f9;
+  --color-snippet-string: #a7f3d0;
+  --color-snippet-identifier: #e2e8f0;
+  --color-snippet-operator: #94a3b8;
+  --color-snippet-punctuation: #94a3b8;
+  --color-snippet-comment: #94a3b8;
+}
+
+@theme inline {
+  --color-foreground-strong: var(--color-white);
+  --color-snippet-foreground: var(--color-slate-200);
+}
+
+:root {
+  color-scheme: light dark;
+  font-family:
+    "Avenir Next", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    background:
+      radial-gradient(circle at top, rgb(34 211 238 / 0.18), transparent 38%),
+      linear-gradient(180deg, #020617 0%, #020617 100%);
+  }
+
+  body {
+    @apply bg-surface text-foreground antialiased;
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+
+  .page-shell {
+    @apply mx-auto flex min-h-screen w-full max-w-6xl flex-col;
+    @apply px-4 py-4 sm:px-6 sm:py-6 lg:px-10 xl:max-w-7xl;
+  }
+
+  header {
+    @apply flex flex-col gap-3 border-b border-border/80 pb-4;
+    @apply sm:flex-row sm:items-center sm:justify-between sm:pb-5;
+  }
+
+  header nav {
+    @apply flex flex-wrap items-center gap-2;
+  }
+
+  header a,
+  footer a {
+    @apply transition-colors hover:text-foreground-strong;
+  }
+
+  header img {
+    display: block;
+  }
+
+  main {
+    @apply flex flex-1 flex-col items-start gap-12;
+    @apply py-10 sm:py-14 lg:py-20;
+  }
+
+  .hero {
+    @apply grid w-full max-w-none gap-10;
+    @apply lg:grid-cols-[minmax(0,1.1fr)_minmax(22rem,0.9fr)] lg:items-center;
+  }
+
+  .hero-content {
+    @apply max-w-3xl;
+  }
+
+  .hero-title {
+    @apply text-4xl font-semibold tracking-tight text-foreground;
+    @apply sm:text-5xl;
+  }
+
+  .hero-intro {
+    @apply mt-5 text-base leading-7 text-muted;
+    @apply sm:mt-6 sm:text-lg;
+  }
+
+  h1 {
+    @apply text-lg font-semibold uppercase tracking-[0.2em] text-foreground;
+  }
+
+  h3,
+  h4 {
+    @apply text-sm font-medium uppercase tracking-[0.3em] text-muted;
+  }
+
+  footer {
+    @apply flex flex-col gap-3 border-t border-border/80 pt-5;
+    @apply text-sm text-muted;
+    @apply sm:flex-row sm:items-center sm:justify-between sm:pt-6;
+  }
+
+  footer nav {
+    @apply flex flex-wrap items-center gap-5;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  pre {
+    margin: 0;
+  }
+
+  code {
+    font-family:
+      "SFMono-Regular", ui-monospace, "Cascadia Mono", "Segoe UI Mono",
+      monospace;
+  }
+}
+
+@layer components {
+  .page-section {
+    @apply flex w-full flex-col gap-6 border-t border-border/80 py-10 sm:py-12;
+  }
+
+  .section-header {
+    @apply max-w-3xl;
+  }
+
+  .section-header-intro {
+    @apply mt-3 text-base leading-7 text-muted;
+    @apply sm:mt-4 sm:text-lg;
+  }
+
+  .api-list {
+    @apply w-full list-disc space-y-3 pl-5 text-base leading-7 text-muted;
+  }
+
+  .api-list code {
+    @apply font-mono text-accent;
+  }
+
+  .api-list span {
+    @apply ml-2;
+  }
+
+  .demo-form-note {
+    @apply mt-3 text-sm leading-6 text-muted;
+  }
+
+  .demo-grid {
+    @apply grid w-full gap-4 lg:grid-cols-2;
+  }
+
+  .demo-form,
+  .demo-result {
+    @apply rounded-2xl border border-border/80 bg-surface-elevated/80 p-5;
+  }
+
+  .demo-result {
+    @apply flex min-h-52 flex-col gap-6;
+  }
+
+  .demo-rendered {
+    @apply flex flex-1 items-center;
+  }
+
+  .demo-range-label {
+    @apply mt-5 grid gap-3 text-sm text-muted;
+  }
+
+  .demo-range-label span {
+    @apply flex items-center justify-between;
+  }
+
+  .demo-range-label output {
+    @apply text-2xl font-semibold tracking-tight text-foreground;
+  }
+
+  .demo-range {
+    @apply w-full accent-accent;
+  }
+
+  .demo-apply {
+    @apply mt-6 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground;
+    @apply cursor-pointer transition-opacity hover:opacity-85;
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-accent;
+  }
+
+  .demo-result-label {
+    @apply text-xs font-semibold uppercase tracking-[0.25em] text-accent;
+  }
+
+  .demo-placeholder,
+  .demo-content {
+    @apply w-full text-2xl font-semibold tracking-tight text-foreground;
+  }
+
+  .demo-content {
+    @apply rounded-xl border border-accent/50 bg-accent/10 p-4;
+  }
+}

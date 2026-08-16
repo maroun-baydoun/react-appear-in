@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Make React components render sometime in the future."
+    />
+    <link
+      rel="canonical"
+      href="https://dev.maroun-baydoun.com/react-appear-in/"
+    />
+    <meta
+      property="og:title"
+      content="react-appear-in | Make React components render sometime in the future"
+    />
+    <meta
+      property="og:description"
+      content="Make React components render sometime in the future."
+    />
+    <meta
+      property="og:image"
+      content="https://dev.maroun-baydoun.com/react-appear-in/og.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://dev.maroun-baydoun.com/react-appear-in/og.jpg"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "react-appear-in",
+        "description": "Make React components render sometime in the future.",
+        "programmingLanguage": "TypeScript",
+        "runtimePlatform": "Web",
+        "isAccessibleForFree": true,
+        "license": "https://opensource.org/license/mit/",
+        "codeRepository": "https://github.com/maroun-baydoun/react-appear-in",
+        "url": "https://github.com/maroun-baydoun/react-appear-in"
+      }
+    </script>
+    <title>
+      react-appear-in | Make React components render sometime in the future
+    </title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header>
+        <div>
+          <h1>react-appear-in</h1>
+        </div>
+        <nav aria-label="Project links">
+          <a href="https://github.com/maroun-baydoun/react-appear-in"
+            >★ Github</a
+          >
+          <a
+            href="https://www.npmjs.com/package/react-appear-in"
+            aria-label="npm package"
+          >
+            <img
+              alt="npm package"
+              src="https://badge.fury.io/js/react-appear-in.svg"
+            />
+          </a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-content">
+            <h2 class="hero-title">
+              Make React components render sometime in the future.
+            </h2>
+            <p class="hero-intro">
+              Delay rendering any component with minutes, seconds, or
+              milliseconds, and show a placeholder while it waits.
+            </p>
+          </div>
+
+          <snippet-card title="Example" language-label="TypeScript">
+            <div data-snippet-header>
+              <span data-snippet-title></span>
+              <span data-snippet-language></span>
+            </div>
+            <pre><code data-code="example" data-language="tsx"></code></pre>
+            <snippet-copy-button>Copy</snippet-copy-button>
+          </snippet-card>
+        </section>
+
+        <section class="page-section" data-project-specific>
+          <div class="section-header">
+            <h3>Try It Live</h3>
+            <p class="section-header-intro">
+              Adjust the delay and watch the component move from its placeholder
+              to its content.
+            </p>
+          </div>
+          <div id="demo-root"></div>
+        </section>
+
+        <section class="page-section">
+          <div class="section-header">
+            <h3>Install</h3>
+            <p class="section-header-intro">
+              Add the package with your preferred package manager.
+            </p>
+          </div>
+
+          <chip-tabs data-default-tab="npm" id="install-tabs">
+            <div data-tablist aria-label="Package manager">
+              <button type="button" data-tab="npm">npm</button>
+              <button type="button" data-tab="pnpm">pnpm</button>
+              <button type="button" data-tab="yarn">yarn</button>
+            </div>
+            <div data-tab-panels>
+              <snippet-card data-tab-panel="npm">
+                <pre><code data-code="install-npm" data-language="shell"></code></pre>
+                <snippet-copy-button>Copy</snippet-copy-button>
+              </snippet-card>
+              <snippet-card data-tab-panel="pnpm">
+                <pre><code data-code="install-pnpm" data-language="shell"></code></pre>
+                <snippet-copy-button>Copy</snippet-copy-button>
+              </snippet-card>
+              <snippet-card data-tab-panel="yarn">
+                <pre><code data-code="install-yarn" data-language="shell"></code></pre>
+                <snippet-copy-button>Copy</snippet-copy-button>
+              </snippet-card>
+            </div>
+          </chip-tabs>
+        </section>
+
+        <section class="page-section" aria-labelledby="api-heading">
+          <div class="section-header">
+            <h3 id="api-heading">API</h3>
+            <p class="section-header-intro">
+              The library exports one React component, <code>AppearIn</code>.
+              Here are its props.
+            </p>
+          </div>
+          <ul class="api-list">
+            <li>
+              <code>minutes?</code>, <code>seconds?</code>,
+              <code>milliseconds?</code>
+              <span>Delay units combined into one total delay.</span>
+            </li>
+            <li>
+              <code>placeholder?</code>
+              <span>Content rendered while the children are hidden.</span>
+            </li>
+            <li>
+              <code>onAppear?</code>
+              <span
+                >Callback invoked with the total delay when the children
+                render.</span
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <nav>
+          <a href="https://dev.maroun-baydoun.com/">See other projects</a>
+          <a href="https://www.npmjs.com/package/react-appear-in">npm</a>
+          <a href="https://github.com/maroun-baydoun/react-appear-in">github</a>
+        </nav>
+        <span>
+          © <copyright-year>2026</copyright-year>
+          <a href="https://maroun-baydoun.com/">Maroun Baydoun</a>
+        </span>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

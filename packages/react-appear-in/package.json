@@ -1,0 +1,63 @@
+{
+  "name": "react-appear-in",
+  "version": "2.1.0",
+  "description": "Make React components render sometime in the future",
+  "type": "module",
+  "module": "./dist/react-appear-in.js",
+  "types": "./dist/react-appear-in.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/react-appear-in.d.ts",
+      "import": "./dist/react-appear-in.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "author": {
+    "name": "Maroun Baydoun",
+    "url": "https://maroun-baydoun.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maroun-baydoun/react-appear-in.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maroun-baydoun/react-appear-in/issues"
+  },
+  "homepage": "https://dev.maroun-baydoun.com/react-appear-in/",
+  "keywords": [
+    "react",
+    "appear",
+    "typescript"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "build:clean": "rimraf dist",
+    "build:js": "vite build",
+    "build:types": "tsc -p tsconfig.build.json",
+    "build": "pnpm build:clean && pnpm build:js && pnpm build:types",
+    "prepublishOnly": "pnpm build",
+    "release:patch": "pnpm version patch",
+    "release:minor": "pnpm version minor",
+    "release:major": "pnpm version major",
+    "release:beta": "pnpm version prerelease --preid beta",
+    "release:beta-major": "pnpm version premajor --preid beta",
+    "release:beta-minor": "pnpm version preminor --preid beta",
+    "release:beta-patch": "pnpm version prepatch --preid beta"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "react": "catalog:",
+    "rimraf": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:"
+  }
+}

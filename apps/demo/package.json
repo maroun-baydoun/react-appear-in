@@ -1,0 +1,26 @@
+{
+  "name": "@react-appear-in/demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "pnpm --filter react-appear-in build",
+    "build": "vite build",
+    "og": "node scripts/generate-og.js"
+  },
+  "dependencies": {
+    "react": "catalog:",
+    "react-appear-in": "workspace:*",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react": "catalog:",
+    "sharp": "catalog:",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:"
+  }
+}

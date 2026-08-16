@@ -1,71 +1,19 @@
 {
-  "name": "react-appear-in",
-  "version": "2.1.0",
-  "description": "Make react components appear sometime in the future",
-  "main": "dist/react-appear-in.js",
-  "types": "types/react-appear-in.d.ts",
+  "name": "react-appear-in-workspace",
+  "private": true,
+  "description": "Make React components render sometime in the future",
   "scripts": {
-    "format": "prettier --write './**/*.tsx' 'webpack.config.js'",
-    "test": "jest test",
-    "test:watch": "jest test --watch",
-    "build": "webpack --mode production",
-    "preversion": "npm test",
-    "version": "npm run build",
-    "postversion": "git push --tags"
+    "build": "pnpm --filter react-appear-in build",
+    "demo": "pnpm --filter @react-appear-in/demo dev",
+    "demo:build": "pnpm --filter @react-appear-in/demo build",
+    "test": "pnpm --filter @react-appear-in/test test",
+    "format": "prettier --write './{apps,packages}/**/*.{ts,tsx,html,json,css}' './*.{json,md,yaml,yml}'"
   },
-  "author": {
-    "name": "Maroun Baydoun",
-    "url": "https://maroun-baydoun.com/"
+  "engines": {
+    "node": "24",
+    "pnpm": "11"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:maroun-baydoun/react-appear-in.git"
-  },
-  "bugs": {
-    "url": "https://github.com/maroun-baydoun/react-appear-in/issues"
-  },
-  "homepage": "https://dev.maroun-baydoun.com/react-appear-in/",
-  "keywords": [
-    "react",
-    "appear",
-    "typescript"
-  ],
-  "files": [
-    "LICENSE",
-    "README.md",
-    "types"
-  ],
-  "license": "MIT",
   "devDependencies": {
-    "@types/jest": "26.0.23",
-    "@types/react": "16.8.0",
-    "@types/react-test-renderer": "16.8.1",
-    "clean-webpack-plugin": "3.0.0",
-    "jest": "27.0.4",
-    "prettier": "2.3.1",
-    "react": "16.8.0",
-    "react-test-renderer": "16.8.0",
-    "ts-jest": "27.0.3",
-    "ts-loader": "9.2.3",
-    "typescript": "4.3.2",
-    "webpack": "5.38.1",
-    "webpack-cli": "4.7.2"
-  },
-  "peerDependencies": {
-    "react": ">=16.8.0"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
+    "prettier": "catalog:"
   }
 }

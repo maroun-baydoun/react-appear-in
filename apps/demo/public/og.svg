@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">react-appear-in — Make React components render sometime in the future.</title>
+  <desc id="description">Make React components render sometime in the future.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617" />
+      <stop offset="1" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)" />
+  <circle cx="1050" cy="110" r="250" fill="#67e8f9" opacity=".12" />
+  <g id="project-specific-graphic" transform="translate(790 105) rotate(7)">
+    <rect width="350" height="420" rx="34" fill="#07111f" stroke="#475569" stroke-width="3" />
+    <rect x="28" y="28" width="294" height="364" rx="22" fill="#111827" />
+    <rect x="60" y="88" width="230" height="18" rx="9" fill="#67e8f9" />
+    <rect x="60" y="132" width="180" height="14" rx="7" fill="#94a3b8" opacity=".8" />
+    <rect x="60" y="210" width="230" height="84" rx="16" fill="#67e8f9" opacity=".16" stroke="#67e8f9" />
+    <circle cx="92" cy="252" r="27" fill="#67e8f9" />
+    <circle cx="92" cy="252" r="19" fill="none" stroke="#020617" stroke-width="4" />
+    <path d="M92 238v14l10 7" fill="none" stroke="#020617" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+    <rect x="138" y="245" width="104" height="14" rx="7" fill="#e2e8f0" />
+  </g>
+  <g font-family="Avenir Next, Segoe UI, Helvetica Neue, Arial, sans-serif">
+    <text x="78" y="270" fill="#f8fafc" font-size="78" font-weight="650" letter-spacing="-3">react-appear-in</text>
+    <text x="84" y="340" fill="#67e8f9" font-size="30" font-weight="600">Make React components render</text>
+    <text x="84" y="378" fill="#67e8f9" font-size="30" font-weight="600">sometime in the future.</text>
+  </g>
+</svg>

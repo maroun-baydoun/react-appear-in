@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect, useRef } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 
 export type AppearInProps = {
   milliseconds?: number;
@@ -9,7 +9,7 @@ export type AppearInProps = {
   placeholder?: (time: number) => React.ReactNode;
 };
 
-const AppearIn: React.FC<AppearInProps> = ({
+const AppearIn: React.FC<React.PropsWithChildren<AppearInProps>> = ({
   milliseconds,
   seconds,
   minutes,
@@ -21,7 +21,7 @@ const AppearIn: React.FC<AppearInProps> = ({
     return (milliseconds || 0) + (seconds || 0) * 1000 + (minutes || 0) * 60000;
   }, [milliseconds, seconds, minutes]);
 
-  const timeOutRef = useRef<NodeJS.Timeout | null>(null);
+  const timeOutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [visible, setVisible] = useState(time === 0);
 
   useEffect(() => {
@@ -42,13 +42,13 @@ const AppearIn: React.FC<AppearInProps> = ({
       }
       setVisible(false);
     };
-  }, [time, onAppear]);
+  }, [time]);
 
   useEffect(() => {
     if (visible && onAppear) {
       onAppear(time);
     }
-  }, [visible, onAppear]);
+  }, [visible, onAppear, time]);
 
   return (
     <React.Fragment>
